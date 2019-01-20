@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Формы обратной связи</title>
+  <meta name="description" content="">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Template Basic Images Start -->
+  <meta property="og:image" content="path/to/image.jpg">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="img/favicon/favicon-48.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16.png">
+  
+  <!-- Template Basic Images End -->
+
+  <!-- Custom Browsers Color Start -->
+  <meta name="theme-color" content="#000">
+  <!-- Custom Browsers Color End -->
+
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+  <!-- start header -->
+  <header class="header">
+	<div class="container">
+      <div class="row">
+        <div class="col-12">
+				
+          <h1>Варианты форм обратной связи!</h1>
+          <p>Используется скрипт для отправки форм на почту без перезагрузки страницы.</p>
+          <p>Адаптивная верстка для отображения на различных экранах.</p>
+          <a href="form_all.html">Форма заказа</a><br>
+          <a href="form_ui.html">Форма с элементами UI</a><br>
+          <a href="form_smtp.html">Форма обратной связи с отправкой через SMTP</a><br>
+          
+        </div>
+      </div>
+	</div>
+  </header>
+  <!-- end header -->
+
+  <!-- start section-form--line -->
+  <section class="section-form--line">
+	<div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="form-title">Форма обратной связи (на всю ширину экрана) №1</h2>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <div class="contact-form">
+            <form class="callback">
+              
+              <!-- Hidden Required Fields -->
+              <input type="hidden" name="project_name" value="www.доменсайтаотправки.com">
+              <input type="hidden" name="admin_email" value="email-получениязаявок@mail.com">
+              <input type="hidden" name="form_subject" value="Заявка с сайта форма №1">
+              <!-- END Hidden Required Fields -->
+
+            <div class="wrap-input">
+              <input type="text" name="name" placeholder=" Ваше имя" required>
+            </div>
+            <div class="wrap-input">
+              <input type="text" name="phone" placeholder=" Ваш номер телефона" required>
+            </div>
+             
+            <button class="button">Оставить заявку!</button>
+              
+            </form>
+          </div>
+          
+        </div>
+      </div>
+	</div>
+  </section>
+  <!-- end section-form--line --> 
+  
+  <!-- start section-form--side -->
+  <section class="section-form--side">
+	<div class="container">
+      <div class="row justify-content-end">
+        <div class="col-12">
+          <h2 class="form-title">Форма обратной связи (на половину ширины экрана) №2</h2>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <div class="contact-form">
+            <form class="callback">
+              
+              <!-- Hidden Required Fields -->
+              <input type="hidden" name="project_name" value="www.доменсайтаотправки.com">
+              <input type="hidden" name="admin_email" value="email-получениязаявок@mail.com">
+              <input type="hidden" name="form_subject" value="Заявка с сайта форма №2">
+              <!-- END Hidden Required Fields -->
+
+            <div class="wrap-input">
+              <input type="text" name="name" placeholder=" Ваше имя" required>
+            </div>
+            <div class="wrap-input">
+              <input type="text" name="phone" placeholder=" Ваш номер телефона" required>
+            </div>
+            <div class="wrap-input">
+              <input type="text" name="email" placeholder=" Ваш E-mail" required>
+            </div>
+             
+            <button class="button">Оставить заявку!</button>
+              
+            </form>
+          </div>
+          
+        </div>
+      </div>
+	</div>
+  </section>
+  <!-- end section-form--side -->
+  
+  <!-- start section-after-sending -->
+  <section class="section-after-sending">
+    <div class="overlay"></div>
+    <div class="modal-send">
+     
+      <button class="modal__close"></button>
+      
+      <h4 class="modal__header">Спасибо за обращение!</h4>
+      <p class="modal__text">Мы свяжемся с Вами в ближайшее время</p>
+      
+    </div>
+  </section>
+  <!-- end section-after-sending -->
+  
+  <!-- start section-form--modal -->
+  <section class="section-form--modal">
+	<div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="form-title">Форма обратной связи (в модальном окне)</h2>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <button class="button button-modal">Открыть форму</button>
+        </div>
+      </div>
+	</div>
+  </section>
+  <!-- end section-form--modal -->
+  
+  <!-- start section-modal -->
+  <section class="section-modal">
+    <div class="overlay"></div>
+    <div class="modal">
+      <button class="modal__close"></button>
+        
+        <div class="contact-form">
+          <h3 class="modal-form__title">Форма обратной связи №3</h3>
+          <form class="callback-modal">
+           
+            <div class="success">
+              <span>Спасибо за вашу заявку!</span>
+            </div>
+            
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="www.доменсайтаотправки.com">
+            <input type="hidden" name="admin_email" value="email-получениязаявок@mail.com">
+            <input type="hidden" name="form_subject" value="Заявка с сайта форма №3">
+            <!-- END Hidden Required Fields -->
+
+            <div class="wrap-input">
+              <input type="text" name="name" placeholder=" Ваше имя" required>
+            </div>
+            <div class="wrap-input">
+              <input type="text" name="phone" placeholder=" Ваш номер телефона" required>
+            </div>
+            <div class="wrap-input">
+              <input type="text" name="email" placeholder=" Ваш E-mail" required>
+            </div>
+
+          <button class="button">Оставить заявку!</button>
+
+          </form>
+        </div>
+        
+    </div>
+  </section>
+  <!-- end section-modal -->
+  
+   
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <!-- Подключение остальных файлов -->
+  <script src="js/common.js"></script>
+
+</body>
+</html>

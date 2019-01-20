@@ -1,0 +1,74 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+  .section-form--line
+    padding: 40px 0
+
+    .callback
+      justify-content: space-around
+
+      
+  .section-form--side
+    padding: 40px 0
+    
+// ≥992px
++media-breakpoint-down(md)
+  .section-form--line
+    padding: 30px 0
+
+    .callback
+      flex-direction: column
+      justify-content: flex-start
+  
+      
+  .section-form--side
+    padding: 30px 0
+    
+// ≥768px
++media-breakpoint-down(sm)
+  .section-form--line
+    .contact-form
+      margin: 10px 0
+      
+    .callback
+      flex-direction: column
+      justify-content: flex-start
+      
+      input[type="text"]
+        width: 300px
+        padding: 8px 12px
+        font-size: 24px
+
+      .button
+        width: 300px
+        font-size: 30px
+        
+        
+  .section-form--side
+    .contact-form
+      margin: 10px 0
+      
+      input[type="text"]
+        width: 300px
+        padding: 8px 12px
+        font-size: 24px
+
+      .button
+        width: 300px
+        font-size: 30px
+        
+// ≥576px
++media-breakpoint-down(xs)
+  .modal
+    padding: 20px
+    
+    .callback
+      input[type="text"]
+        width: 260px
+
+      .button
+        width: 260px

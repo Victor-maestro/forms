@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Форма обратной связи SMTP</title>
+  <meta name="description" content="">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Template Basic Images Start -->
+  <meta property="og:image" content="path/to/image.jpg">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="img/favicon/favicon-48.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16.png">
+  
+  <!-- Template Basic Images End -->
+
+  <!-- Custom Browsers Color Start -->
+  <meta name="theme-color" content="#000">
+  <!-- Custom Browsers Color End -->
+
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+  <!-- start header -->
+  <header class="header">
+	<div class="container">
+      <div class="row">
+        <div class="col-12">
+				
+          <h1>Форма обратной связи с отправкой через SMTP</h1>
+          <p>Используется библиотека PHPMailer для отправки форм на почту через SMTP-сервер</p>
+          <a href="index.html">Формы обратной связи</a><br>
+          <a href="form_all.html">Форма обратной связи со всеми элементами</a><br>
+          <a href="form_ui.html">Форма с элементами UI</a>
+
+        </div>
+      </div>
+	</div>
+  </header>
+  <!-- end header -->
+
+  <!-- start section-form-SMTP -->
+  <section class="section-form-SMTP">
+	<div class="container">
+      <div class="row">
+        <div class="col-12 ">
+          <h2 class="form-title">Форма обратной связи</h2>
+          
+          <div class="contact-form">
+            <form class="form form-SMTP" id="contactForm" action="handler.php" method="post">
+
+                <div class="field-block">
+                  <label for="name">Ваше имя:</label>
+                  <input id="name" class="field" name="name" type="text" placeholder="Имя Фамилия Отчество" required>
+                </div>
+
+                <div class="field-block">
+                  <label for="email">Ваш E-mail:</label>
+                  <input id="email" class="field" name="email" type="email" placeholder="Ваша электронная почта" required>
+                </div>
+               
+                <div class="field-block">
+                  <label for="phone">Ваш телефон:</label>
+                  <input id="phone" class="field" name="phone" type="text" placeholder="+7 (000) 000-00-00" required>
+                </div>
+                  
+                <div class="field-block">
+                  <label for="message">Текст сообщения:</label>
+				  <textarea id="message" class="field" name="message" rows="4" required></textarea>
+                </div>
+                
+                <div class="field-block">
+                  <input id="check" name="check" type="checkbox" checked>
+                  <span class="check-text">Согласие на обработку персональных данных</span>
+			    </div>
+                
+                <button id="button" class="button" type="submit">Отправить</button>
+  
+                <div class="result">
+                  <span id="answer"></span>
+                  <span id="loader"><img src="img/loader.gif" alt="Индикатор загрузки"></span>
+                </div>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+	</div>
+  </section>
+  <!-- end section-form-SMTP --> 
+   
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/script.js"></script>
+  
+  <!-- Подключение остальных файлов
+  <script src="js/common.js"></script> -->
+
+</body>
+</html>

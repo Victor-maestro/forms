@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Форма заказа</title>
+  <meta name="description" content="">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Template Basic Images Start -->
+  <meta property="og:image" content="path/to/image.jpg">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="img/favicon/favicon-48.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16.png">
+  
+  <!-- Template Basic Images End -->
+
+  <!-- Custom Browsers Color Start -->
+  <meta name="theme-color" content="#000">
+  <!-- Custom Browsers Color End -->
+
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+  <!-- start header -->
+  <header class="header">
+	<div class="container">
+      <div class="row">
+        <div class="col-12">
+				
+          <h1>Форма обратной связи со всеми элементами</h1>
+          <p>Используется скрипт для отправки форм на почту без перезагрузки страницы.</p>
+          <p>Адаптивная верстка для отображения на различных экранах.</p>
+          <a href="index.html">Формы обратной связи</a><br>
+          <a href="form_ui.html">Форма с элементами UI</a><br>
+          <a href="form_smtp.html">Форма обратной связи с отправкой через SMTP</a><br>
+
+        </div>
+      </div>
+	</div>
+  </header>
+  <!-- end header -->
+
+  <!-- start section-form -->
+  <section class="section-form">
+	<div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+          <h2 class="form-title">Элементы формы заказа</h2>
+          <div class="contact-form">
+            <form class="form form--full">
+              
+              <!-- Hidden Required Fields -->
+              <input type="hidden" name="project_name" value="www.доменсайтаотправки.com">
+              <input type="hidden" name="admin_email" value="email-получениязаявок@mail.com">
+              <input type="hidden" name="form_subject" value="Заявка с сайта форма №1">
+              <!-- END Hidden Required Fields -->
+
+              <fieldset>
+                <legend>Контактная информация</legend>
+
+                <div class="field-block">
+                  <label for="name">Имя</label>
+                  <input id="name" class="field" type="text" name="name" placeholder="Ваше имя" size="30" required>
+                </div>
+
+                <div class="field-block">
+                  <label for="phone">Телефон</label>
+                  <input id="phone" class="field" type="tel" name="phone" placeholder="Ваш номер телефона" maxlength="10" required>
+                </div>
+                  
+                <div class="field-block">
+                  <label for="email">Email</label>
+                  <input id="email" class="field" type="email" name="email" placeholder="Ваша электронная почта">
+                </div>
+                
+                <div class="checkbox-personal">
+                  <input id="personal" class="checkbox" name="personal" type="checkbox" required>
+                  <label for="personal">Согласие на обработку персональных данных</label>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Регистрация</legend>
+
+                <div class="field-block">
+                  <label for="log">Логин:</label>
+                  <input id="log" class="field" type="text" name="log" placeholder="Ваш логин" required>
+                </div>
+                
+                <div class="field-block">
+                  <label for="pass">Пароль:</label>
+                  <input id="pass" class="field" type="password" name="pass" placeholder="Ваш пароль" required>
+                </div>
+              </fieldset>
+
+              <fieldset class="information">
+                <legend>Информация</legend>
+                
+                <div class="field-block">
+                  <span class="designation">Пол:</span>
+                  <label>
+                    <input type="radio" name="sex" value="Мужской" checked="checked"> Мужской
+                  </label>
+                  <label>
+                    <input type="radio" name="sex" value="Женский"> Женский
+                  </label>
+                </div>
+                
+                <div class="field-flex">
+                  <span class="designation">Возраст:</span>
+                  <label>
+                    <input class="age" type="text" name="age" size="2">
+                  </label>
+                </div>
+                
+                <div class="field-block">
+                  <span class="designation">Хобби:</span>
+                  <label><input type="checkbox" name="hobby" value="sport" checked="checked" /> Спорт</label>
+                  <label><input type="checkbox" name="hobby" value="collecting" /> Коллекционирование</label>
+                  <label><input type="checkbox" name="hobby" value="fishing" /> Рыбалка</label>
+                  <label><input type="checkbox" name="hobby" value="choreography" /> Хореография</label>
+                  <label><input type="checkbox" name="hobby" value="cooking" /> Кулинария</label>
+                  <label><input type="checkbox" name="hobby" value="photo" /> Фотография</label>
+                  <label><input type="checkbox" name="hobby" value="tourism" /> Туризм</label>
+                  <label><input type="checkbox" name="hobby" value="reading" /> Чтение</label>
+                </div>
+                
+                <div class="field-block">
+                  <span class="designation">Страна проживания:</span>
+                  <select name="country">
+                    <option value="RF" selected="selected">Российская Федерация</option>
+                    <option value="USA">США</option>
+                    <option value="Canada">Канада</option>
+                    <option value="Germany">Германия</option>
+                    <option value="Australia">Австралия</option>
+                  </select>
+                </div>
+                
+                <div class="field-block">
+                  <span class="designation">О себе:</span>
+                  <label><textarea name="about-me" rows="5"> </textarea></label>
+                </div>
+                
+                <div class="field-block">
+                  <span class="designation">Выбрать файл:</span>
+                  <label><input class="file" name="send-file" type="file" size="30" maxlength="40"></label>
+                </div>
+              </fieldset>
+              
+              <div class="wrap-btn">
+                <button class="button button--reset" type="reset" value="Сбросить">Сбросить</button>
+                <button class="button button--submit" type="submit" value="Отправить заявку">Отправить заявку</button>
+              </div>
+              
+            </form>
+          </div>
+          
+        </div>
+      </div>
+	</div>
+  </section>
+  <!-- end section-form --> 
+
+  
+  
+   
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <!-- Подключение остальных файлов -->
+  <script src="js/common.js"></script>
+
+</body>
+</html>

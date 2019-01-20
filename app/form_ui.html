@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Форма jQuery UI</title>
+  <meta name="description" content="">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Template Basic Images Start -->
+  <meta property="og:image" content="path/to/image.jpg">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="img/favicon/favicon-48.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16.png">
+  
+  <!-- Template Basic Images End -->
+
+  <!-- Custom Browsers Color Start -->
+  <meta name="theme-color" content="#000">
+  <!-- Custom Browsers Color End -->
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/jquery-ui.structure.css">
+  <link rel="stylesheet" href="css/jquery-ui.theme.css">
+
+</head>
+
+<body>
+
+  <!-- start header -->
+  <header class="header">
+	<div class="container">
+      <div class="row">
+        <div class="col-12">
+				
+          <h1>Форма заказа с элементами UI</h1>
+          <p>Используется скрипт jQuery UI</p>
+          <p>Адаптивная верстка для отображения на различных экранах.</p>
+          <a href="index.html">Формы обратной связи</a><br>
+          <a href="form_all.html">Форма заказа</a><br>
+          <a href="form_smtp.html">Форма обратной связи с отправкой через SMTP</a><br>
+
+        </div>
+      </div>
+	</div>
+  </header>
+  <!-- end header -->
+
+  <!-- start section-form-ui -->
+  <section class="section-form-ui">
+	<div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+          <h2 class="form-title">Форма заказа</h2>
+          <div class="contact-form">
+            <form class="form form--ui">
+
+              <fieldset>
+                <legend>Информация о пассажире:</legend>
+
+                <div class="field-block">
+                  <label for="name">Имя</label>
+                  <input id="name" class="field" type="text" name="name" placeholder="Ваше имя" size="30" required>
+                </div>
+                
+                <div class="field-block">
+                  <label for="surname">Фамилия</label>
+                  <input id="surname" class="field" type="text" name="surname" placeholder="Ваша фамилия" size="40" required>
+                </div>
+
+               <div class="field-block field-block--radio">
+                  <span class="designation">Пол:</span>
+                  
+                  <input id="man" type="radio" name="sex" value="Мужской" checked="checked"> 
+                  <label for="man">Мужской</label>
+                
+                  <input id="women" type="radio" name="sex" value="Женский"> 
+                  <label for="women">Женский</label>
+                  
+                </div>
+                
+                <div class="field-block">
+                  <label for="datebirth">Дата рождения</label>
+                  <input id="datebirth" class="field" type="text" name="datebirth" placeholder="Дата рождения" required>
+                </div>
+                
+                <div class="field-block">
+                  <label for="passport">Паспорт</label>
+                  <input id="passport" class="field" type="text" name="passport" placeholder="Серия и номер" required>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Информация о перелёте:</legend>
+
+                <div class="field-block">
+                  <label for="dod">Дата вылета:</label>
+                  <input id="dod" class="field" type="text" name="dod" placeholder="Дата вылета" required>
+                </div>
+                
+                <div class="field-block">
+                  <label for="destination">Пункт назначения:</label>
+                  <select id="destination" name="city">
+                    <option value="LED">Санкт-Петербург</option>
+                    <option value="MSK">Москва</option>
+                    <option value="PAR">Париж</option>
+                    <option value="BIR">Берлин</option>
+                    <option value="LDN">Лондон</option>
+                    <option value="RIM">Рим</option>
+                    <option value="MDR">Мадрид</option>
+                  </select>
+                </div>
+                
+              </fieldset>
+
+              <fieldset>
+                <legend>Дополнительная информация:</legend>
+
+                <div class="field-block field-block--checkbox">
+                  <span class="designation">Питание на борту:</span>
+                  
+                  <input type="radio" id="fish" name="foods" value="fish"> 
+                  <label for="fish">Рыбное</label>
+                  <input type="radio" id="meat" name="foods" value="meat"> 
+                  <label for="meat">Мясное</label>
+                  <input type="radio" id="vegetarian" name="foods" value="vegetarian"> 
+                  <label for="vegetarian">Вегетарианское</label>
+                  <input type="radio" id="fruit" name="foods" value="fruit"> 
+                  <label for="fruit">Фрукты</label>
+                </div>
+                
+                <div class="field-block field-block--radio">
+                  <span class="designation">Места на борту:</span>
+                  <label><input type="radio" name="place" value="at-window"> У окна</label>
+                  <label><input type="radio" name="place" value="aisle-seat"> В проходе</label>
+                </div>
+                
+                <div class="field-block field-block--checkbox">
+                  <span class="designation">Дополнительно:</span>
+                  <label><input type="checkbox" name="add" value="alcohol"> Алкоголь</label>
+                  <label><input type="checkbox" name="add" value="books"> Книги</label>
+                  <label><input type="checkbox" name="add" value="plaid"> Плед</label>
+                </div>
+
+              </fieldset>
+              
+              <div class="wrap-btn">
+                <input class="reset" type="reset" value="Очистить">
+                <input class="submit" type="submit" value="Отправить">
+              </div>
+              
+            </form>
+          </div>
+          
+        </div>
+      </div>
+	</div>
+  </section>
+  <!-- end section-form-ui --> 
+
+  
+  
+   
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <!-- Подключение остальных файлов -->
+  <script src="js/common.js"></script>
+
+</body>
+</html>
